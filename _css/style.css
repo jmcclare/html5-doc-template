@@ -181,6 +181,20 @@ pre {
     overflow-x: auto;
     overflow-y: hidden;
 }
+/*
+ * Place this on pre tags if you want to have them not output their indenting
+ * spaces. This lets you indent them in the HTML code without having them
+ * indented in the output.
+ *
+ * Be warned though: It collapses any repeated white space characters into one.
+ * You may not always want that. That’s why this is in a class and not applied
+ * to the pre tag directly.
+ *
+ * From https://stackoverflow.com/a/31754555
+ */
+.collapse-white-space {
+    white-space: pre-line;
+}
 code, kbd, samp {
     padding: 0 3px;
     border: 1px solid #EAEAEA;
