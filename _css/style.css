@@ -97,8 +97,9 @@ body {
     /*bump line height from 1.22 to 1.5 (1.4 is recommended as a benchmark:*/
     /*http://www.informationarchitects.jp/en/100e2r/)*/
     line-height: 1.5;
-    width: 700px;
+    width: auto;
     margin: 0 auto;
+    padding: 0 10px;
     background-color: #fff;
     color: #333;
 }
@@ -337,8 +338,12 @@ th {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+/* @media only screen and (min-width: 35em) { */
+@media only screen and (min-width: 720px) {
   /* Style adjustments for viewports that meet the condition */
+    body {
+        width: 700px;
+    }
 }
 
 @media print,
