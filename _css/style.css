@@ -1,3 +1,18 @@
+/* Google font API CSS fetched from:
+ *   http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700
+ *
+ * I fetched all of the src URLs in that CSS, put them in fonts/open-sans and
+ * changed the src URLs to relative URLs to the files there.
+ *
+ * This has the advantage of letting this CSS work offline, and it also makes
+ * no requests in the background to nosy services like Google’s. The
+ * disadvantage is that with a large directory of documents using their own
+ * copy of this CSS you will download the same ~600 kB of fonts over and over.
+ *
+ * This must be imported before anything else to avoid overriding any other
+ * styles. */
+@import "google-fonts-open-sans.css";
+
 /*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -85,6 +100,7 @@ textarea {
    Author: Jonathan McClare
    ========================================================================== */
 
+/* @import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700"); */
 /* Try a color scheme generator for ideas:
  * http://www.dhtmlgoodies.com/scripts/color-schemer/color-schemer.html
  */
