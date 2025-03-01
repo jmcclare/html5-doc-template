@@ -191,7 +191,7 @@ li {
  margin: .125em 0 .125em 2em;
 }
 pre, code, kbd, samp {
-    font-family: Inconsolata, monospace;
+    font-family: Inconsolata, Liberation Mono, monospace;
 }
 pre {
     padding: 5px;
