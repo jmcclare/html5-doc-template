@@ -1,18 +1,3 @@
-/* Google font API CSS fetched from:
- *   http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700
- *
- * I fetched all of the src URLs in that CSS, put them in fonts/open-sans and
- * changed the src URLs to relative URLs to the files there.
- *
- * This has the advantage of letting this CSS work offline, and it also makes
- * no requests in the background to nosy services like Google’s. The
- * disadvantage is that with a large directory of documents using their own
- * copy of this CSS you will download the same ~600 kB of fonts over and over.
- *
- * This must be imported before anything else to avoid overriding any other
- * styles. */
-@import "google-fonts-open-sans.css";
-
 /*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -106,7 +91,8 @@ textarea {
  */
 body {
     /*font-family: 'Open Sans', Verdana, Geneva, Helvetica, Arial, sans-serif;*/
-    font-family: Georgia, Times, serif;
+    /*font-family: Georgia, Times, serif;*/
+    font-family: Liberation Serif, Georgia, Times, serif;
     /*Make default font size 20px (16px is recommended as a minimum:*/
     /*http://www.smashingmagazine.com/2011/10/07/16-pixels-body-copy-anything-less-costly-mistake/)*/
     font-size:20px;
@@ -121,8 +107,10 @@ body {
 }
 h1, h2, h3, h4, h5, h6, .subheading {
     margin: 1em 0 .5em;
-    font-family: 'Open Sans', Verdana, Geneva, Helvetica, Arial, sans-serif;
     /*font-family: Georgia, Times, serif;*/
+    /*font-family: 'Open Sans', Verdana, Geneva, Helvetica, Arial, sans-serif;*/
+    /*font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;*/
+    font-family: Liberation Sans, Verdana, Geneva, Helvetica, Arial, sans-serif;
     font-weight: bold;
     color: #669AD4; /* natural sky blue */
     color: #1E90FF; /* bright sky blue */
@@ -180,11 +168,13 @@ strong {
     color: #000;
 }
 em {
-    font-family: Georgia, Times, serif;
+    /*font-family: Georgia, Times, serif;*/
+    font-family: Liberation Serif, Georgia, Times, serif;
     color: #666;
 }
 dt {
-    font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;
+    /*font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;*/
+    font-family: Liberation Sans, Verdana, Geneva, Helvetica, Arial, sans-serif;
     color: #666;
 }
 li {
